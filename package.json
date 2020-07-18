@@ -1,0 +1,21 @@
+{
+    "name": "material-deep-ocean-theme",
+    "displayName": "Material Deep Ocean Theme",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Material Deep Ocean",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Material Deep Ocean-color-theme.json"
+            }
+        ]
+    }
+}
