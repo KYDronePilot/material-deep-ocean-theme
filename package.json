@@ -17,5 +17,9 @@
                 "path": "./themes/Material Deep Ocean-color-theme.json"
             }
         ]
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-yaml": "git+https://github.com/crissdev/gulp-yaml.git#157acf416e84700bf4f2c5674795937d7ce8b96a"
     }
 }
