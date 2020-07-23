@@ -538,6 +538,8 @@ tokenColors:
       - keyword
       - storage.type
       - storage.modifier
+      - constant.language
+      - keyword.operator.logical
     settings:
       foreground: "#C792EA"
       fontStyle: italic
@@ -587,7 +589,6 @@ tokenColors:
   - name: Number, Constant, Function Argument, Tag Attribute, Embedded
     scope:
       - constant.numeric
-      - constant.language
       - support.constant
       - constant.character
       - constant.escape
