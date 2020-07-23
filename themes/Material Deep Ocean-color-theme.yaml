@@ -471,6 +471,44 @@ colors:
   # window.activeBorder: ""
   # window.inactiveBorder: ""
 tokenColors:
+  - name: Python docstring
+    scope:
+      - string.quoted.docstring.multi.python
+    settings:
+      foreground: "#717CB4"
+      fontStyle: italic
+  - name: Python self parameter
+    scope:
+      - variable.parameter.function.language.special.self.python
+    settings:
+      foreground: "#FF5370"
+      fontStyle: italic
+  - name: Function parameter typing
+    scope:
+      - meta.function.parameters
+    settings:
+      foreground: "#FFCB6B"
+  - name: Python builtins
+    scope:
+      - support.type.python
+      - support.function
+    settings:
+      foreground: "#82AAFF"
+      fontStyle: italic
+  - name: Basic foreground
+    scope:
+      - punctuation.separator.annotation.result
+      - meta.fstring.python
+      - meta.function-call.arguments
+      - entity.other.inherited-class.python
+    settings:
+      foreground: "#eeffff"
+  - name: TODO
+    scope:
+      - keyword.codetag.notation
+    settings:
+      foreground: "#FFEB95"
+      fontStyle: italic bold
   - name: Comment
     scope:
       - comment
@@ -502,11 +540,10 @@ tokenColors:
       - storage.modifier
     settings:
       foreground: "#C792EA"
+      fontStyle: italic
   - name: Operator, Misc
     scope:
-      - keyword.control
       - constant.other.color
-      - punctuation
       - meta.tag
       - punctuation.definition.tag
       - punctuation.separator.inheritance.php
@@ -514,8 +551,11 @@ tokenColors:
       - punctuation.definition.tag.begin.html
       - punctuation.definition.tag.end.html
       - punctuation.section.embedded
+      - punctuation.separator
+      - punctuation.section
       - keyword.other.template
       - keyword.other.substitution
+      - keyword.operator
     settings:
       foreground: "#89DDFF"
   - name: Tag
@@ -530,7 +570,6 @@ tokenColors:
       - entity.name.function
       - meta.function-call
       - variable.function
-      - support.function
       - keyword.other.special-method
     settings:
       foreground: "#82AAFF"
@@ -555,6 +594,7 @@ tokenColors:
       - variable.parameter
       - keyword.other.unit
       - keyword.other
+      - meta.fstring.python
     settings:
       foreground: "#F78C6C"
   - name: String, Symbols, Inherited Class, Markup Heading
@@ -580,11 +620,6 @@ tokenColors:
       - support.type.sys-types
     settings:
       foreground: "#FFCB6B"
-  - name: Entity Types
-    scope:
-      - support.type
-    settings:
-      foreground: "#B2CCD6"
   - name: CSS Class and Support
     scope:
       - source.css support.type.property-name
