@@ -1,10 +1,10 @@
 name: Material Deep Ocean
 type: dark
 colors:
-  activityBar.activeBackground: &activityBarBackground "#181b29"
+  activityBar.activeBackground: &activityBarActiveBackground "#181b29"
   activityBar.activeBorder: &accentColor "#84FFFF"
   # activityBar.activeFocusBorder: ""
-  activityBar.background: "#131520"
+  activityBar.background: &activityBarBackground "#131520"
   # activityBar.border: ""
   # activityBar.dropBackground: ""
   activityBar.dropBorder: "#D04A4D"
@@ -176,8 +176,8 @@ colors:
   # editorWarning.border: ""
   # editorWarning.foreground: "#cca700"
   # editorWhitespace.foreground: "#e3e4e229"
-  # editorWidget.background: "#252526"
-  # editorWidget.border: "#454545"
+  editorWidget.background: *activityBarActiveBackground
+  editorWidget.border: *accentColor
   # editorWidget.foreground: "#cccccc"
   # editorWidget.resizeBorder: ""
   # errorForeground: "#f48771"
@@ -213,25 +213,25 @@ colors:
   # inputValidation.warningBackground: "#352a05"
   # inputValidation.warningBorder: "#b89500"
   # inputValidation.warningForeground: ""
-  # list.activeSelectionBackground: "#094771"
+  list.activeSelectionBackground: &tabHighlightedBackground "#1A1C25"
   # list.activeSelectionForeground: "#ffffff"
   # list.deemphasizedForeground: "#8c8c8c"
-  # list.dropBackground: "#383b3d"
+  list.dropBackground: "#20222d"
   # list.errorForeground: "#f88070"
-  # list.filterMatchBackground: "#ea5c0055"
+  list.filterMatchBackground: "#60B7B9"
   # list.filterMatchBorder: ""
-  list.focusBackground: "#444B69"
+  list.focusBackground: *tabHighlightedBackground
   # list.focusForeground: ""
   # list.highlightForeground: "#0097fb"
   list.hoverBackground: "#131620"
   # list.hoverForeground: ""
-  # list.inactiveFocusBackground: ""
-  # list.inactiveSelectionBackground: "#37373d"
+  list.inactiveFocusBackground: "#15171e"
+  list.inactiveSelectionBackground: "#15171e"
   # list.inactiveSelectionForeground: ""
   # list.invalidItemForeground: "#b89500"
   # list.warningForeground: "#cca700"
-  # listFilterWidget.background: "#653723"
-  # listFilterWidget.noMatchesOutline: "#be1100"
+  listFilterWidget.background: "#20222d"
+  listFilterWidget.noMatchesOutline: "#be1100"
   # listFilterWidget.outline: "#00000000"
   # menu.background: "#252526"
   # menu.border: ""
@@ -325,10 +325,10 @@ colors:
   # quickInput.foreground: "#cccccc"
   # quickInputTitle.background: "#ffffff1b"
   # scm.providerBorder: "#454545"
-  # scrollbar.shadow: "#000000"
-  # scrollbarSlider.activeBackground: "#bfbfbf66"
-  # scrollbarSlider.background: "#79797966"
-  # scrollbarSlider.hoverBackground: "#646464b3"
+  scrollbar.shadow: "#000000"
+  scrollbarSlider.activeBackground: *accentColor
+  scrollbarSlider.background: *accentColorSemiTransparent
+  scrollbarSlider.hoverBackground: *accentColor
   # searchEditor.findMatchBackground: "#ea5c0038"
   # searchEditor.findMatchBorder: ""
   # searchEditor.textInputBorder: ""
@@ -352,7 +352,7 @@ colors:
   # sideBar.border: ""
   # sideBar.dropBackground: "#53595d80"
   # sideBar.foreground: ""
-  # sideBarSectionHeader.background: "#00000000"
+  sideBarSectionHeader.background: *activityBarBackground
   # sideBarSectionHeader.border: "#cccccc33"
   # sideBarSectionHeader.foreground: ""
   # sideBarTitle.foreground: "#bbbbbb"
@@ -405,7 +405,7 @@ colors:
   # symbolIcon.typeParameterForeground: "#cccccc"
   # symbolIcon.unitForeground: "#cccccc"
   # symbolIcon.variableForeground: "#75beff"
-  tab.activeBackground: &tabHighlightedBackground "#1A1C25"
+  tab.activeBackground: *tabHighlightedBackground
   tab.activeBorder: *accentColor
   # tab.activeBorderTop: ""
   # tab.activeForeground: "#ffffff"
@@ -457,7 +457,7 @@ colors:
   # textLink.foreground: "#3794ff"
   # textPreformat.foreground: "#d7ba7d"
   # textSeparator.foreground: "#ffffff2e"
-  # titleBar.activeBackground: *activityBarBackground
+  # titleBar.activeBackground: *activityBarActiveBackground
   # titleBar.activeForeground: "#cccccc"
   # titleBar.border: ""
   # titleBar.inactiveBackground: "#3c3c3c99"
