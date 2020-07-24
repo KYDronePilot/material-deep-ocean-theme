@@ -501,6 +501,7 @@ tokenColors:
       - meta.fstring.python
       - meta.function-call.arguments
       - entity.other.inherited-class.python
+      - meta.jsx.children
     settings:
       foreground: "#eeffff"
   - name: TODO
@@ -509,6 +510,13 @@ tokenColors:
     settings:
       foreground: "#FFEB95"
       fontStyle: italic bold
+  - name: Interface
+    scope:
+      - entity.name.type
+      - meta.interface entity.name
+    settings:
+      foreground: "#C3E88D"
+      fontStyle: italic
   - name: Comment
     scope:
       - comment
@@ -540,12 +548,15 @@ tokenColors:
       - storage.modifier
       - constant.language
       - keyword.operator.logical
+      - support.type.primitive
+      - support.type.builtin
     settings:
       foreground: "#C792EA"
       fontStyle: italic
   - name: Operator, Misc
     scope:
       - constant.other.color
+      - constant.language.import-export-all
       - meta.tag
       - punctuation.definition.tag
       - punctuation.separator.inheritance.php
@@ -555,16 +566,29 @@ tokenColors:
       - punctuation.section.embedded
       - punctuation.separator
       - punctuation.section
+      - punctuation.terminator
+      - punctuation.definition.typeparameters
+      - punctuation.definition.template-expression
+      - punctuation.accessor
       - keyword.other.template
       - keyword.other.substitution
       - keyword.operator
+      - storage.type.function.arrow
     settings:
       foreground: "#89DDFF"
+  - name: Special keywords
+    scope:
+      - keyword.control.export
+    settings:
+      foreground: "#89DDFF"
+      fontStyle: italic
   - name: Tag
     scope:
+      - support.class.component
       - entity.name.tag
       - meta.tag.sgml
       - markup.deleted.git_gutter
+      - entity.other.keyframe-offset
     settings:
       foreground: "#f07178"
   - name: Function, Special Method
@@ -579,7 +603,7 @@ tokenColors:
     scope:
       - meta.block variable.other
     settings:
-      foreground: "#f07178"
+      foreground: "#ffffff"
   - name: Other Variable, String Link
     scope:
       - support.other.variable
@@ -596,6 +620,7 @@ tokenColors:
       - keyword.other.unit
       - keyword.other
       - meta.fstring.python
+      - meta.import variable.other.readwrite.alias
     settings:
       foreground: "#F78C6C"
   - name: String, Symbols, Inherited Class, Markup Heading
@@ -603,7 +628,6 @@ tokenColors:
       - string
       - constant.other.symbol
       - constant.other.key
-      - entity.other.inherited-class
       - markup.heading
       - markup.inserted.git_gutter
       - meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
@@ -612,15 +636,18 @@ tokenColors:
   - name: Class, Support
     scope:
       - entity.name
-      - support.type
+      - entity.name.type.class
+      - entity.other.inherited-class
       - support.class
       - support.orther.namespace.use.php
       - meta.use.php
       - support.other.namespace.php
       - markup.changed.git_gutter
       - support.type.sys-types
+      - entity.other.attribute-name
     settings:
       foreground: "#FFCB6B"
+      fontStyle: ""
   - name: CSS Class and Support
     scope:
       - source.css support.type.property-name
@@ -656,11 +683,6 @@ tokenColors:
       - variable.function.constructor
     settings:
       foreground: "#82AAFF"
-  - name: Attributes
-    scope:
-      - entity.other.attribute-name
-    settings:
-      foreground: "#C792EA"
   - name: HTML Attributes
     scope:
       - text.html.basic entity.other.attribute-name.html
