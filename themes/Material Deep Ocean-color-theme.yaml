@@ -220,7 +220,7 @@ colors:
   # list.errorForeground: "#f88070"
   list.filterMatchBackground: "#60B7B9"
   # list.filterMatchBorder: ""
-  list.focusBackground: *tabHighlightedBackground
+  list.focusBackground: "#2a2e3c"
   # list.focusForeground: ""
   # list.highlightForeground: "#0097fb"
   list.hoverBackground: "#131620"
