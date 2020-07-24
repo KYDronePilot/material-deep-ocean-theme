@@ -131,7 +131,7 @@ colors:
   # editorHint.border: ""
   # editorHint.foreground: "#eeeeeeb3"
   # editorHoverWidget.background: "#252526"
-  # editorHoverWidget.border: "#454545"
+  editorHoverWidget.border: &transparent "#00000000"
   # editorHoverWidget.foreground: "#cccccc"
   # editorHoverWidget.statusBarBackground: "#2c2c2d"
   # editorIndentGuide.activeBackground: "#707070"
@@ -167,7 +167,7 @@ colors:
   # editorPane.background: "#1e1e1e"
   # editorRuler.foreground: "#5a5a5a"
   # editorSuggestWidget.background: "#252526"
-  # editorSuggestWidget.border: "#454545"
+  editorSuggestWidget.border: *transparent
   # editorSuggestWidget.foreground: "#d4d4d4"
   # editorSuggestWidget.highlightForeground: "#0097fb"
   # editorSuggestWidget.selectedBackground: "#062f4a"
@@ -410,7 +410,7 @@ colors:
   # tab.activeBorderTop: ""
   # tab.activeForeground: "#ffffff"
   # tab.activeModifiedBorder: "#3399cc"
-  tab.border: &transparent "#00000000"
+  tab.border: *transparent
   tab.hoverBackground: *tabHighlightedBackground
   # tab.hoverBorder: ""
   # tab.hoverForeground: ""
