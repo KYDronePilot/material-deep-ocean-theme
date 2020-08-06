@@ -457,10 +457,10 @@ colors:
   # textLink.foreground: "#3794ff"
   # textPreformat.foreground: "#d7ba7d"
   # textSeparator.foreground: "#ffffff2e"
-  # titleBar.activeBackground: *activityBarActiveBackground
+  titleBar.activeBackground: *activityBarBackground
   # titleBar.activeForeground: "#cccccc"
   # titleBar.border: ""
-  # titleBar.inactiveBackground: "#3c3c3c99"
+  titleBar.inactiveBackground: "#262a40"
   # titleBar.inactiveForeground: "#cccccc99"
   # tree.indentGuidesStroke: "#585858"
   # walkThrough.embeddedEditorBackground: ""
@@ -548,6 +548,8 @@ tokenColors:
       - storage.modifier
       - constant.language
       - keyword.operator.logical
+      - keyword.operator.new
+      - keyword.operator.expression
       - support.type.primitive
       - support.type.builtin
     settings:
@@ -597,6 +599,7 @@ tokenColors:
       - meta.function-call
       - variable.function
       - keyword.other.special-method
+      - punctuation.decorator
     settings:
       foreground: "#82AAFF"
   - name: Block Level Variables
@@ -637,6 +640,7 @@ tokenColors:
     scope:
       - entity.name
       - entity.name.type.class
+      - new.expr entity.name.type
       - entity.other.inherited-class
       - support.class
       - support.orther.namespace.use.php
