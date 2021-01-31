@@ -19,7 +19,11 @@
         ]
     },
     "devDependencies": {
+        "@types/gulp": "^4.0.8",
+        "@types/node": "^14.14.22",
         "gulp": "^4.0.2",
-        "gulp-yaml": "git+https://github.com/crissdev/gulp-yaml.git#157acf416e84700bf4f2c5674795937d7ce8b96a"
+        "gulp-yaml": "git+https://github.com/crissdev/gulp-yaml.git#157acf416e84700bf4f2c5674795937d7ce8b96a",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.1.3"
     }
 }
