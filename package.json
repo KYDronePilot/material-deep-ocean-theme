@@ -3,6 +3,9 @@
     "displayName": "Material Deep Ocean Theme",
     "description": "",
     "version": "0.0.1",
+    "scripts": {
+        "build": "ts-node src/index.ts"
+    },
     "engines": {
         "vscode": "^1.47.0"
     },
