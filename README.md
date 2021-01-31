@@ -1,19 +1,18 @@
-# README
+# Material Deep Ocean Theme
 
-## This is the README for your extension "material-deep-ocean-theme"
+VSCode theme based on the [Material Theme
+Plugin](https://www.material-theme.com)'s _Deep Ocean_ theme for JetBrains IDEs.
 
-You can author your README using Visual Studio Code. Here are some useful editor
-keyboard shortcuts:
+![Theme screenshot on macOS](docs/img/macos_theme_screenshot.png)
 
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-- Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-- Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of
-  Markdown snippets
+## Installing
 
-### For more information
+This theme can be installed from the [VSCode Marketplace].
 
-- [Visual Studio Code's Markdown
-  Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## Notice a problem?
 
-**Enjoy!**
+This theme is still early in its development and some languages are supported
+better than others. If you notice any problems, please [create an
+issue](https://github.com/KYDronePilot/material-deep-ocean-theme/issues). Since
+this is a different platform then IntelliJ, there are unfortunately some aspects
+of the original theme that can't be replicated.
