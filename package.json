@@ -1,10 +1,10 @@
 {
     "name": "material-deep-ocean-theme",
     "displayName": "Material Deep Ocean Theme",
-    "description": "",
+    "description": "VSCode version of the JetBrains Material Theme Plugin's Deep Ocean theme",
     "version": "0.0.1",
     "scripts": {
-        "build": "ts-node src/index.ts"
+        "build": "gulp build"
     },
     "engines": {
         "vscode": "^1.47.0"
@@ -21,6 +21,25 @@
             }
         ]
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KYDronePilot/material-deep-ocean-theme.git"
+    },
+    "author": {
+        "name": "Michael Galliers",
+        "email": "kydronepilotdev@gmail.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KYDronePilot/material-deep-ocean-theme/issues"
+    },
+    "keywords": [
+        "vscode",
+        "material",
+        "jet-brains",
+        "deep-ocean"
+    ],
+    "homepage": "https://github.com/KYDronePilot/material-deep-ocean-theme",
     "devDependencies": {
         "@types/fs-extra": "^9.0.6",
         "@types/gulp": "^4.0.8",
