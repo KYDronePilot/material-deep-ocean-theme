@@ -1,6 +1,3 @@
-import fs from 'fs'
-import path from 'path'
-
 const activityBarActiveBackground = '#181b29'
 const accentColor = '#84FFFF'
 const activityBarBackground = '#131520'
@@ -1103,6 +1100,4 @@ const theme = {
     ],
 }
 
-const THEME_JSON = path.join(__dirname, '..', 'themes', 'Material Deep Ocean-color-theme.json')
-
-fs.writeFileSync(THEME_JSON, JSON.stringify(theme))
+export default theme

@@ -1,13 +1,11 @@
-const gulp = require('gulp')
-const yaml = require('gulp-yaml')
+import fse from 'fs-extra'
+import path from 'path'
 
-gulp.task('yaml', () => {
-    return gulp
-        .src('./themes/*.yaml')
-        .pipe(yaml({ space: 2 }))
-        .pipe(gulp.dest('./themes/'))
-})
+const BUILD = path.join(__dirname, 'themes')
+const THEME_JSON = path.join(BUILD, 'Material Deep Ocean-color-theme.json')
 
-gulp.task('default', () => {
-    return gulp.watch('./themes/*.yaml', gulp.series(['yaml']))
-})
+export async function build() {
+    await fse.emptyDir(BUILD)
+    const themeConfig = require('./src/index')
+    await fse.writeFile(THEME_JSON, JSON.stringify(themeConfig))
+}
