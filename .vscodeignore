@@ -4,3 +4,17 @@
 vsc-extension-quickstart.md
 **/*.yaml
 node_modules/**
+
+# Ignore everything
+*
+*/**
+
+# Only allow some files
+!.vscodeignore
+!CHANGELOG.md
+!logo.png
+!MATERIAL_THEME_LICENSE
+!LICENSE
+!package.json
+!README.md
+!themes
