@@ -6,6 +6,6 @@ const THEME_JSON = path.join(BUILD, 'Material Deep Ocean-color-theme.json')
 
 export async function build() {
     await fse.emptyDir(BUILD)
-    const themeConfig = require('./src/index')
+    const themeConfig = require('./src/index').default
     await fse.writeFile(THEME_JSON, JSON.stringify(themeConfig))
 }
