@@ -3,6 +3,8 @@
     "displayName": "Material Deep Ocean Theme",
     "description": "VSCode version of the JetBrains Material Theme Plugin's Deep Ocean theme",
     "version": "0.0.1",
+    "icon": "logo.png",
+    "publisher": "KYDronePilot",
     "scripts": {
         "build": "gulp build"
     },
