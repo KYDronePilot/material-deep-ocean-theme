@@ -3,7 +3,7 @@
 VSCode theme based on the [Material Theme
 Plugin](https://www.material-theme.com)'s _Deep Ocean_ theme for JetBrains IDEs.
 
-![Theme screenshot on macOS](docs/img/macos_theme_screenshot.png)
+![Theme screenshot on macOS](img/macos_theme_screenshot.png)
 
 ## Installing
 
