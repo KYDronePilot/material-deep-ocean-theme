@@ -959,6 +959,15 @@ const theme = {
             },
         },
         {
+            name: 'Markdown - Markup Raw String',
+            scope: [
+                'text.html.markdown markup.inline.raw.string.markdown',
+            ],
+            settings: {
+                foreground: '#C792EA'
+            },
+        },
+        {
             name: 'Markdown - Heading',
             scope: [
                 'markdown.heading',
